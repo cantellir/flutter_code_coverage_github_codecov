@@ -27,6 +27,10 @@ class _SecondPageState extends State<SecondPage> {
                 onPressed: () => Navigator.pop(context),
                 child: const Text('Go back to first page'),
               ),
+              ElevatedButton(
+                onPressed: () => Navigator.pop(context),
+                child: const Text('Nothing'),
+              ),
             ],
           ),
         ),
