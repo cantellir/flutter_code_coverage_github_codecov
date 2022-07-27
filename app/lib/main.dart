@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Integration with codecov',
+      title: 'Integration with codecov test',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
