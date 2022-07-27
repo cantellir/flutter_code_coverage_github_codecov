@@ -1,4 +1,4 @@
-![codecov](https://codecov.io/gh/cantellir/flutter_code_coverage_github_codecov/branch/main/graph/badge.svg)
+[![codecov](https://codecov.io/gh/cantellir/flutter_code_coverage_github_codecov/branch/main/graph/badge.svg)](https://codecov.io/gh/cantellir/flutter_code_coverage_github_codecov)
 
 ## Additional info
 
