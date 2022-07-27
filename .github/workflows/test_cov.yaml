@@ -1,0 +1,34 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  test-code-coverage:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install and set Flutter version
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.0.2'
+      
+      - name: Install lcov
+        run: sudo apt-get install -y lcov
+
+      - name: Install melos
+        run: dart pub global activate melos
+        
+      - name: Install all packages
+        run: melos bootstrap
+        
+      # run script to test, merge coverage files and analize minimum coverage
+      - name: Run generate coverage
+        run: ./generate_coverage.sh false
