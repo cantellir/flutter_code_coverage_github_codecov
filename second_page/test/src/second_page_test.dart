@@ -39,24 +39,4 @@ void main() {
 
     expect(find.text('Go to second page'), findsOneWidget);
   });
-
-  testWidgets('Should go back to first page when nothing is pressed',
-      (WidgetTester tester) async {
-    await createSecondPage(tester);
-
-    await tester.tap(find.text('Nothing'));
-    await tester.pumpAndSettle();
-
-    expect(find.text('Go to second page'), findsOneWidget);
-  });
-
-  testWidgets('Should go back to first page when nothing is pressed',
-      (WidgetTester tester) async {
-    await createSecondPage(tester);
-
-    await tester.tap(find.text('Test button'));
-    await tester.pumpAndSettle();
-
-    expect(find.text('Go to second page'), findsOneWidget);
-  });
 }
