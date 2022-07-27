@@ -30,13 +30,13 @@ void main() {
     expect(find.text('This is the second page!'), findsOneWidget);
   });
 
-  testWidgets('Should go back to first page when go back is pressed',
-      (WidgetTester tester) async {
-    await createSecondPage(tester);
+  // testWidgets('Should go back to first page when go back is pressed',
+  //     (WidgetTester tester) async {
+  //   await createSecondPage(tester);
 
-    await tester.tap(find.text('Go back to first page'));
-    await tester.pumpAndSettle();
+  //   await tester.tap(find.text('Go back to first page'));
+  //   await tester.pumpAndSettle();
 
-    expect(find.text('Go to second page'), findsOneWidget);
-  });
+  //   expect(find.text('Go to second page'), findsOneWidget);
+  // });
 }
