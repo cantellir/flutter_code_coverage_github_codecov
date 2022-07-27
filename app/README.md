@@ -1,5 +1,3 @@
-![codecov](https://codecov.io/gh/cantellir/flutter_code_coverage_github_codecov/branch/main/graph/badge.svg)
-
 # app
 
 A new Flutter project.

@@ -1,3 +1,5 @@
+![codecov](https://codecov.io/gh/cantellir/flutter_code_coverage_github_codecov/branch/main/graph/badge.svg)
+
 ## Additional info
 
 This is the third part of four repositories teaching how to handle code coverage in Flutter APPs:
